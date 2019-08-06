@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Senior Design Project",
+    "description": "A two-course capstone design project that had groups of students working with directors and clients from various industries.  My team’s group (nine people total) was assigned the client Siemens Gamesa Renewable Energy, who invested over $15,000 towards the project's completion.  This system uses infrared photography to scan wind turbine blades for physical defects and is mounted on an industry-grade drone to allow operation from the ground.  One requirement of the system is that it must be able to determine when and where the IR camera was when it took a given picture (to map the picture to a section of the turbine blade).  To determine this, we needed to interface the single board computer to multiple sensors including GPS, LIDAR, and an Inertial Measurement Unit.<br><br>My job as the Systems Developer was to recommend computer and sensor components for the system and to work with the team to interface all of the components together.  After the system was physically interfaced, my next task was to install/configure the OS on the computer and develop a program/service to log all data from the sensors to onboard storage.  In addition to logging sensor data, the service needed to communicate with the operator (via LED), test the functionality of the sensors, and monitor the system for possible issues (e.g. low battery or system overheating).  Some of the milestones that our team accomplished includes: defining the problems to be solved, determining design requirements, creating proof-of-concept prototype and CAD drawings, presenting a preliminary design review, getting client approval for the comprehensive design, manufacturing review, peer assessment, design exposition, final report, and delivery of the final product.",
+    "links": [
+      {
+        "text": "Article describing project",
+        "linkURL": "https://www.colorado.edu/mechanical/2019/04/22/siemens-gamesa-partners-cu-students-develop-drone-based-monitoring-system-wind-turbines"
+      },
+      {
+        "text": "Design Center Colorado",
+        "linkURL": "https://www.colorado.edu/designcenter"
+      },
+      {
+        "text": "Siemens Gamesa homepage",
+        "linkURL": "https://www.siemensgamesa.com"
+      }
+    ]
+  },
+  {
+    "name": "Object-Oriented Software Project",
+    "description": "With three other students, worked on a semester-long software project utilizing principles and methods of object-oriented analysis and design.  Our project was to create a checkers game that utilized AI to provide a challenging computer component.  The first iteration of our project included: determining requirements, defining use cases, and creating activity, sequence, and class diagrams (UML).  Following iterations focused on given functionality (e.g. Artificial Intelligence or User Interface) that we wanted implemented and tested.  At the end of the semester, we: gave a presentation/demo of our project to the class, submitted a report on our project, and evaluated our team members' contributions and professionalism.",
+    "links": []
+  },
+  {
+    "name": "Software Development Project",
+    "description": "With a group of students, developed and deployed a web application.  Utilized various resources/services such as: GitHub, Heroku, NodeJS, mongoDB, Doxygen, and Bootstrap.  Deliverables included a web application that: created a new database document for each user, supported user login sessions, encrypted the user’s password using the Blowfish algorithm, and provided tools allowing users to manage their database document inside the web browser.",
+    "links": []
+  },
+  {
+    "name": "Designing richardpoulson.com",
+    "description": "For hosting the website, I am using the GitHub Pages service. The website utilizes the following libraries: Bootstrap 4, Jquery, and Popper. I leased the domain through Google domains, which is also handling DNS and email forwarding.",
+    "links": [
+      {
+        "text": "GitHub repository",
+        "linkURL": "https://github.com/RichardPoulson/RichardPoulson.github.io"
+      }
+    ]
+  }
+]

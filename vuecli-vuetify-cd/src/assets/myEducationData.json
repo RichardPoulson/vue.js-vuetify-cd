@@ -1,0 +1,20 @@
+[
+  {
+    "name": "University of Colorado Boulder",
+    "degree": "Bachelor of Science in Computer Science",
+    "gpa": "Cumulative GPA: 3.68 &nbsp;&nbsp; Comp. Sci. GPA: 3.49",
+    "duration": "August 2015 - May 2019"
+  },
+  {
+    "name": "Front Range Community College",
+    "degree": "Associate's Degree of General Studies",
+    "gpa": "GPA: 3.85",
+    "duration": "May 2014 - May 2015"
+  },
+  {
+    "name": "Blue Ridge High School",
+    "degree": "High School Diploma",
+    "gpa": "GPA: 3.19",
+    "duration": "August 1996 - May 2000"
+  }
+]

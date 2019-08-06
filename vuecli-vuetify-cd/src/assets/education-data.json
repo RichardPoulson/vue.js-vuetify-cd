@@ -1,13 +1,13 @@
 [
   {
     "name": "University of Colorado Boulder",
-    "degree": "Bachelor of Science in Computer Science",
-    "gpa": "Cumulative GPA: 3.68 &nbsp;&nbsp; Comp. Sci. GPA: 3.49",
+    "degree": "B.S in Computer Science",
+    "gpa": "GPA: 3.68",
     "duration": "August 2015 - May 2019"
   },
   {
     "name": "Front Range Community College",
-    "degree": "Associate's Degree of General Studies",
+    "degree": "Associate's Degree",
     "gpa": "GPA: 3.85",
     "duration": "May 2014 - May 2015"
   },

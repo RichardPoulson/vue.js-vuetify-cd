@@ -1,7 +1,10 @@
 <template>
   <div class="home">
-    <h2>Home</h2>
-    <p>hello</p>
+    <v-container>
+      <v-layout justify-center>
+        <span class="display-2">Welcome to my professional site!</span>
+      </v-layout>
+    </v-container>
   </div>
 </template>
 

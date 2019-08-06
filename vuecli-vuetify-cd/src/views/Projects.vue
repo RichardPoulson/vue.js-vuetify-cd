@@ -1,7 +1,10 @@
 <template>
   <div class="projects">
-    <h2>Projects</h2>
-    <p>hello</p>
+    <v-container>
+      <v-layout justify-center>
+        <span class="display-2">Projects</span>
+      </v-layout>
+    </v-container>
   </div>
 </template>
 

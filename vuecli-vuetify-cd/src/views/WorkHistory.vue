@@ -1,7 +1,10 @@
 <template>
   <div class="work-history">
-    <h2>Work History</h2>
-    <p>hello</p>
+    <v-container>
+      <v-layout justify-center>
+        <span class="display-2">Work History</span>
+      </v-layout>
+    </v-container>
   </div>
 </template>
 

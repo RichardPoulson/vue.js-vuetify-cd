@@ -2,24 +2,14 @@
   <div id="app">
     <v-app id="inspire">
       <v-navigation-drawer v-model="drawer" app clipped>
-        <v-list dense>
-          <router-link to="/">
+        <v-list dense nav>
+          <router-link v-for="(item, i) in items" :key="i" :to="item.route">
             <v-list-item @click>
               <v-list-item-action>
-                <v-icon>mdi-view-dashboard</v-icon>
+                <v-icon>{{ item.icon }}</v-icon>
               </v-list-item-action>
               <v-list-item-content>
-                <v-list-item-title>Dashboard</v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </router-link>
-          <router-link to="/about">
-            <v-list-item @click>
-              <v-list-item-action>
-                <v-icon>mdi-settings</v-icon>
-              </v-list-item-action>
-              <v-list-item-content>
-                <v-list-item-title>Settings</v-list-item-title>
+                <v-list-item-title>{{ item.title }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
           </router-link>
@@ -30,7 +20,7 @@
         <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
         <v-toolbar-title>Application</v-toolbar-title>
         <v-spacer />
-        <v-icon @click="this.$vuetify.theme.dark = $vuetify.theme.dark">mdi-theme-light-dark</v-icon>
+        <v-icon @click="this.$vuetify.theme.dark = this.$vuetify.theme.dark">mdi-theme-light-dark</v-icon>
       </v-app-bar>
 
       <v-content>
@@ -90,7 +80,7 @@ export default {
 }
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 1s;
+  transition: opacity 0.5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;

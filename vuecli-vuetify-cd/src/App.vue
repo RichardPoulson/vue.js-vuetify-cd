@@ -20,7 +20,6 @@
         <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
         <v-toolbar-title>Application</v-toolbar-title>
         <v-spacer />
-        <v-icon @click="this.$vuetify.theme.dark = this.$vuetify.theme.dark">mdi-theme-light-dark</v-icon>
       </v-app-bar>
 
       <v-content>

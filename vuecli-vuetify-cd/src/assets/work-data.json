@@ -7,7 +7,7 @@
       "Programming logic controllers (PLCs) for multiple system types (environment control, beverage system monitoring, irrigation).",
       "Developing web application to access a MySQL database and allow authorized users to view data and send queries.  Utilizes the ASP.NET Core framework and the MVC pattern."
     ],
-    "accomplishmentsDisplayed": true
+    "accomplishmentsDisplayed": false
   },
   {
     "name": "Design Center Colorado",
@@ -17,7 +17,7 @@
       "On interdisciplinary team of nine engineers, client was Siemens Gamesa Renewable Energy who invested over $15,000 towards the project's completion.",
       "Interfaced single board computer with three sensor modules (GPS, IMU, LIDAR) and an IR camera, installed/configured OS, developed program/service used to test sensors, buffer/log data, monitor system, and communicate with operator."
     ],
-    "accomplishmentsDisplayed": true
+    "accomplishmentsDisplayed": false
   },
   {
     "name": "Intrado (West Corporation)",

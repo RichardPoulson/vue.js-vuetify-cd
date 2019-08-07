@@ -3,18 +3,24 @@
     "name": "University of Colorado Boulder",
     "degree": "B.S in Computer Science",
     "gpa": "GPA: 3.68",
-    "duration": "August 2015 - May 2019"
+    "duration": "August 2015 - May 2019",
+    "accomplishments": [],
+    "accomplishmentsDisplayed": false
   },
   {
     "name": "Front Range Community College",
     "degree": "Associate's Degree",
     "gpa": "GPA: 3.85",
-    "duration": "May 2014 - May 2015"
+    "duration": "May 2014 - May 2015",
+    "accomplishments": [],
+    "accomplishmentsDisplayed": false
   },
   {
     "name": "Blue Ridge High School",
     "degree": "High School Diploma",
     "gpa": "GPA: 3.19",
-    "duration": "August 1996 - May 2000"
+    "duration": "August 1996 - May 2000",
+    "accomplishments": [],
+    "accomplishmentsDisplayed": false
   }
 ]

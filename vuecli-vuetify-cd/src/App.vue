@@ -4,7 +4,7 @@
       <v-navigation-drawer v-model="drawer" app clipped>
         <v-list dense nav>
           <router-link v-for="(item, i) in items" :key="i" :to="item.route">
-            <v-list-item @click>
+            <v-list-item @click active-class class="ma-1">
               <v-list-item-action>
                 <v-icon>{{ item.icon }}</v-icon>
               </v-list-item-action>
@@ -18,7 +18,12 @@
 
       <v-app-bar app clipped-left>
         <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-        <v-toolbar-title>Application</v-toolbar-title>
+        <v-toolbar-title>
+          <span class="title ml-3 mr-1">
+            <span class="application-title">{{ title }}&nbsp;</span>
+            {{ subtitle }}
+          </span>
+        </v-toolbar-title>
         <v-spacer />
       </v-app-bar>
 
@@ -40,19 +45,21 @@
 export default {
   name: "App",
   data: () => ({
+    title: "Richard Poulson",
+    subtitle: "Professional Site",
     items: [
       {
-        icon: "mdi-view-dashboard",
+        icon: "mdi-home",
         title: "Home",
         route: "/"
       },
       {
-        icon: "mdi-view-dashboard",
+        icon: "mdi-briefcase",
         title: "Work History",
         route: "/work"
       },
       {
-        icon: "mdi-view-dashboard",
+        icon: "mdi-school",
         title: "Educational History",
         route: "/education"
       },
@@ -83,6 +90,28 @@ export default {
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
+}
+#inspire.v-application
+  .v-navigation-drawer
+  .v-navigation-drawer__content
+  .v-list
+  .router-link-exact-active
+  .v-list-item {
+  background-image: linear-gradient(
+    to right,
+    var(--v-primary-base),
+    var(--v-accent-base)
+  );
+  .v-list-item__content {
+    opacity: 1.66;
+  }
+}
+#inspire.v-application
+  .v-app-bar
+  .v-toolbar__content
+  .v-toolbar__title
+  .application-title {
+  color: var(--v-primary-base);
 }
 </style>
 

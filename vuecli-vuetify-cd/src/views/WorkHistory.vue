@@ -3,7 +3,7 @@
     <v-container fluid>
       <!-- PAGE TITLE -->
       <v-layout align-center justify-center>
-        <span class="display-2 text-center">Work History</span>
+        <span class="display-2 text-center">My Work History</span>
       </v-layout>
       <!-- CAROUSEL -->
       <v-carousel
@@ -165,23 +165,5 @@ export default {
       }
     }
   }
-}
-html
-  body
-  div#app
-  div#inspire.v-application.v-application--is-ltr.theme--dark
-  div.v-application--wrap
-  main.v-content
-  div.v-content__wrap
-  div.work-history.view
-  div.container.container--fluid
-  div.v-window.v-item-group.theme--dark.v-window--show-arrows-on-hover.v-carousel.v-carousel--hide-delimiter-background
-  div.v-window__container
-  div.v-window-item
-  div.v-responsive.v-image.v-carousel__item
-  div.v-responsive__content
-  div.v-sheet.theme--dark
-  div.layout.align-center.fill-height.justify-center
-  div.pa-2.v-card.v-card--hover.v-card--link.v-sheet.theme--dark {
 }
 </style>

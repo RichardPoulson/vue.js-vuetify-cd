@@ -102,9 +102,6 @@ export default {
     var(--v-primary-base),
     var(--v-accent-base)
   );
-  .v-list-item__content {
-    opacity: 1.66;
-  }
 }
 #inspire.v-application
   .v-app-bar

@@ -4,23 +4,18 @@
       <v-layout justify-center>
         <span class="display-2">My Projects</span>
       </v-layout>
-      <v-carousel progress hide-delimiter-background hide-delimiters show-arrows-on-hover>
+      <v-carousel hide-delimiter-background show-arrows-on-hover>
         <v-carousel-item v-for="(item, i) in history" :key="i">
           <v-sheet height="100%" color="rgba(0,0,0,0)">
             <v-layout align-center fill-height justify-center>
-              <v-card
-                class="pa-2"
-                hover
-                v-on="on"
-                @click="item.accomplishmentsDisplayed = !item.accomplishmentsDisplayed"
-              >
+              <v-card class="pa-2" hover max-height="550px">
                 <v-layout align-center justify-center>
                   <div class="title-border">
                     <p class="display-1 text-center pa-2 ma-2">{{ item.name }}</p>
                   </div>
                 </v-layout>
                 <v-divider></v-divider>
-                <p>{{ item.description}}</p>
+                <p v-html="item.description"></p>
               </v-card>
             </v-layout>
           </v-sheet>

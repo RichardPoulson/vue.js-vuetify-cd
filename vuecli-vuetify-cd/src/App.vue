@@ -4,7 +4,7 @@
       <v-navigation-drawer v-model="drawer" app clipped>
         <v-list dense nav>
           <router-link v-for="(item, i) in items" :key="i" :to="item.route">
-            <v-list-item @click active-class class="ma-1">
+            <v-list-item @click="0" active-class class="ma-1">
               <v-list-item-action>
                 <v-icon>{{ item.icon }}</v-icon>
               </v-list-item-action>
@@ -19,7 +19,7 @@
       <v-app-bar app clipped-left>
         <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
         <v-toolbar-title>
-          <span class="title ml-3 mr-1">
+          <span class="title mr-1">
             <span class="application-title">{{ title }}&nbsp;</span>
             {{ subtitle }}
           </span>

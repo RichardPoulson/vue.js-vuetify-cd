@@ -8,14 +8,25 @@
         </v-flex>
         <v-flex xs12>
           <p
-            class="title"
-          >Here, you can learn a little more about me, such as where I got my education or where I went to school.</p>
-          <p class="subtitle-1">
-            This site was created using the JavaScript frameworks/modules listed below; if you'd like to use this project to make your own website, you can find the code
+            class="title text-center"
+          >Here, you can learn a little more about me, such as where I went to school and the jobs I've worked at.</p>
+          <p class="subtitle-2 text-center created-with">
+            This site was created with the JavaScript frameworks and modules below; if you would like to use this project to create your own site, you can find the code
             <a
-              href
+              href="https://github.com/RichardPoulson/vue.js-vuetify-cd"
+              target="_blank"
             >here</a>.
           </p>
+        </v-flex>
+      </v-layout>
+    </v-container>
+    <v-container grid-list-xl>
+      <v-layout align-end justify-space-around fill-height row>
+        <v-flex v-for="(item, i) in technologies" :key="i" xs5 sm4 md3 lg2>
+          <a :href="item.href" target="_blank">
+            <div class="svg-logo" v-html="item.image" />
+            <p class="text-center">{{ item.name }}</p>
+          </a>
         </v-flex>
       </v-layout>
     </v-container>
@@ -24,12 +35,43 @@
 
 <script>
 export default {
-  data: () => ({})
+  data: () => ({
+    technologies: [
+      {
+        name: "Vue.js",
+        image: require("@/assets/img/vue-logo.svg"),
+        href: "https://vuejs.org/"
+      },
+      {
+        name: "Vuetify",
+        image: require("@/assets/img/vuetify-logo.svg"),
+        href: "https://vuetifyjs.com/en/"
+      },
+      {
+        name: "Webpack",
+        image: require("@/assets/img/webpack-logo.svg"),
+        href: "https://webpack.js.org/"
+      },
+      {
+        name: "Sass",
+        image: require("@/assets/img/sass-logo.svg"),
+        href: "https://sass-lang.com/"
+      },
+      {
+        name: "Babel",
+        image: require("@/assets/img/babel-logo.svg"),
+        href: "https://babeljs.io/"
+      }
+    ]
+  })
 };
 </script>
 
 <style lang="scss" scoped>
 .welcome-view {
   padding: 1rem;
+}
+.created-with {
+  margin: 4rem 0rem 0rem;
 }
 </style>

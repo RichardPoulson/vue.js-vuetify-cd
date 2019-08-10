@@ -26,15 +26,5 @@
     "name": "Software Development Project",
     "description": "With a group of students, developed and deployed a web application.  Utilized various resources/services such as: GitHub, Heroku, NodeJS, mongoDB, Doxygen, and Bootstrap.  Deliverables included a web application that: created a new database document for each user, supported user login sessions, encrypted the user’s password using the Blowfish algorithm, and provided tools allowing users to manage their database document inside the web browser.",
     "links": []
-  },
-  {
-    "name": "Designing richardpoulson.com",
-    "description": "For hosting the website, I am using the GitHub Pages service. The website utilizes the following libraries: Bootstrap 4, Jquery, and Popper. I leased the domain through Google domains, which is also handling DNS and email forwarding.",
-    "links": [
-      {
-        "text": "GitHub repository",
-        "linkURL": "https://github.com/RichardPoulson/RichardPoulson.github.io"
-      }
-    ]
   }
 ]

@@ -6,13 +6,7 @@
         <span class="display-2 text-center">My Work History</span>
       </v-layout>
       <!-- CAROUSEL -->
-      <v-carousel
-        progress
-        hide-delimiter-background
-        hide-delimiters
-        show-arrows-on-hover
-        active-class
-      >
+      <v-carousel progress hide-delimiter-background hide-delimiters active-class show-arrows>
         <!-- FOR EACH ITEM IN THE HISTORY ARRAY: -->
         <v-carousel-item v-for="(item, i) in history" :key="i">
           <v-sheet height="100%" color="rgba(0,0,0,0)">
@@ -139,7 +133,7 @@ export default {
   .v-window.v-item-group.v-carousel {
   margin: -1rem 0rem;
   .v-window__container .v-window-item .v-responsive.v-carousel__item {
-    .v-responsive__content .v-sheet .layout .v-card {
+    .v-card {
       border: none;
       border-radius: 16px 16px 32px 32px;
       background-image: linear-gradient(

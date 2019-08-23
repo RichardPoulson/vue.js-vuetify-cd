@@ -22,7 +22,7 @@
                   <v-card
                     class="pa-2"
                     active-class
-                    max-width="700px"
+                    max-height="90%"
                     hover
                     v-on="on"
                     @click="item.accomplishmentsDisplayed = !item.accomplishmentsDisplayed"

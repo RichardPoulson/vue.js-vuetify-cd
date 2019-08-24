@@ -7,15 +7,19 @@
           <p class="display-2 text-center">Welcome to my site!</p>
         </v-flex>
         <v-flex xs12>
-          <p
-            class="title text-center"
-          >Here, you can learn a little more about me, such as where I went to school and the jobs I've worked at.</p>
+          <p class="title text-center">
+            Here, you can learn a little more about me, such as where I went to
+            school and the jobs I've worked at.
+          </p>
           <p class="subtitle-2 text-center created-with">
-            This site was created with the JavaScript frameworks and modules below; if you would like to use this project to create your own site, you can find the code
+            This site was created with the JavaScript frameworks and modules
+            below; if you would like to use this project to create your own
+            site, you can find the code
             <a
               href="https://github.com/RichardPoulson/vue.js-vuetify-cd"
               target="_blank"
-            >here</a>.
+              >here</a
+            >.
           </p>
         </v-flex>
       </v-layout>

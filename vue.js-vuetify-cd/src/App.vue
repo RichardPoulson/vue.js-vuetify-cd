@@ -111,4 +111,3 @@ export default {
   color: var(--v-primary-base);
 }
 </style>
-

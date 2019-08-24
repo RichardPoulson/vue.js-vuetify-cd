@@ -3,8 +3,8 @@ import Vue from "vue";
 import Vuetify from "vuetify";
 import VueRouter from "vue-router";
 
-import { shallowMount } from '@vue/test-utils';
-import Component from '@/views/EducationHistory.vue'; // name of your Vue component
+import { shallowMount } from "@vue/test-utils";
+import Component from "@/views/EducationHistory.vue"; // name of your Vue component
 
 let wrapper;
 
@@ -15,7 +15,7 @@ beforeEach(() => {
     propsData: {},
     mocks: {},
     stubs: {},
-    methods: {},
+    methods: {}
   });
 });
 
@@ -23,8 +23,8 @@ afterEach(() => {
   wrapper.destroy();
 });
 
-describe('Component', () => {
-  test('is a Vue instance', () => {
+describe("Component", () => {
+  test("is a Vue instance", () => {
     expect(wrapper.isVueInstance).toBeTruthy();
   });
 });

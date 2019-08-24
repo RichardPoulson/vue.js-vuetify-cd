@@ -22,7 +22,11 @@
                 <v-layout align-center justify-center>
                   <!-- DETAILS -->
                   <div class="title-border">
-                    <p class="display-1 font-weight-medium text-center pa-2 ma-2">{{ item.name }}</p>
+                    <p
+                      class="display-1 font-weight-medium text-center pa-2 ma-2"
+                    >
+                      {{ item.name }}
+                    </p>
                   </div>
                 </v-layout>
                 <v-divider></v-divider>

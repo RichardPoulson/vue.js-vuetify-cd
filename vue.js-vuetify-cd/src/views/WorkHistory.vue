@@ -6,7 +6,13 @@
         <span class="display-2 text-center">My Work History</span>
       </v-layout>
       <!-- CAROUSEL -->
-      <v-carousel progress hide-delimiter-background hide-delimiters active-class show-arrows>
+      <v-carousel
+        progress
+        hide-delimiter-background
+        hide-delimiters
+        active-class
+        show-arrows
+      >
         <!-- FOR EACH ITEM IN THE HISTORY ARRAY: -->
         <v-carousel-item v-for="(item, i) in history" :key="i">
           <v-sheet height="100%" color="rgba(0,0,0,0)">
@@ -25,14 +31,18 @@
                     max-height="90%"
                     hover
                     v-on="on"
-                    @click="item.accomplishmentsDisplayed = !item.accomplishmentsDisplayed"
+                    @click="
+                      item.accomplishmentsDisplayed = !item.accomplishmentsDisplayed
+                    "
                   >
                     <v-layout align-center justify-center>
                       <!-- DETAILS -->
                       <div class="title-border">
                         <p
                           class="display-1 font-weight-medium text-center pa-2 ma-2"
-                        >{{ item.name }}</p>
+                        >
+                          {{ item.name }}
+                        </p>
                       </div>
                     </v-layout>
                     <v-divider></v-divider>
@@ -50,14 +60,19 @@
                         x-small
                         bottom
                       >
-                        <v-icon v-if="item.accomplishmentsDisplayed">mdi-chevron-up</v-icon>
+                        <v-icon v-if="item.accomplishmentsDisplayed"
+                          >mdi-chevron-up</v-icon
+                        >
                         <v-icon v-else>mdi-chevron-down</v-icon>
                       </v-btn>
                     </v-layout>
                     <v-expand-transition>
                       <!-- SHOW ACCOMPLISHMENTS IF THEY'RE NOTED -->
                       <div
-                        v-show="item.accomplishmentsDisplayed && (item.accomplishments.length > 0)"
+                        v-show="
+                          item.accomplishmentsDisplayed &&
+                            item.accomplishments.length > 0
+                        "
                         class="details-border"
                       >
                         <ul class="ma-1 pa-1">
@@ -66,7 +81,9 @@
                             v-for="(accomplishment, j) in item.accomplishments"
                             :key="j"
                             class="subtitle-2"
-                          >{{ accomplishment}}</li>
+                          >
+                            {{ accomplishment }}
+                          </li>
                         </ul>
                       </div>
                     </v-expand-transition>

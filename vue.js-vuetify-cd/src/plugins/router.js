@@ -9,23 +9,28 @@ export default new VueRouter({
   base: __dirname,
   routes: [
     {
-      path: '/', name: "home", component: () =>
-        // route level code-splitting
+      path: "/",
+      name: "home",
+      component: () =>
+        import(// route level code-splitting
         // this generates a separate chunk (about.[hash].js) for this route
         // which is lazy-loaded when the route is visited.
-        import(/* webpackChunkName: "home" */ "../views/Home.vue")
+        /* webpackChunkName: "home" */ "../views/Home.vue")
     },
     {
-      path: '/education', name: "education", component: () =>
-        import("../views/EducationHistory.vue")
+      path: "/education",
+      name: "education",
+      component: () => import("../views/EducationHistory.vue")
     },
     {
-      path: '/work', name: "work", component: () =>
-        import("../views/WorkHistory.vue")
+      path: "/work",
+      name: "work",
+      component: () => import("../views/WorkHistory.vue")
     },
     {
-      path: '/projects', name: "projects", component: () =>
-        import("../views/Projects.vue")
+      path: "/projects",
+      name: "projects",
+      component: () => import("../views/Projects.vue")
     }
   ]
 });

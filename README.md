@@ -16,7 +16,7 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
+### Run all unit (Jest) and end-to-end (Nightwatch) tests
 ```
 npm run test
 ```
@@ -26,12 +26,12 @@ npm run test
 npm run lint
 ```
 
-### Run your end-to-end tests
+### Run your end-to-end tests (Nightwatch)
 ```
 npm run test:e2e
 ```
 
-### Run your unit tests
+### Run your unit tests (Jest)
 ```
 npm run test:unit
 ```

@@ -62,10 +62,20 @@ export default {
         href: "https://sass-lang.com/"
       },
       {
-        name: "Babel",
-        image: require("@/assets/img/babel-logo.svg"),
-        href: "https://babeljs.io/"
-      }
+        name: "Jest",
+        image: require("@/assets/img/jest-logo.svg"),
+        href: "https://jestjs.io/"
+      },
+      {
+        name: "Nightwatch",
+        image: require("@/assets/img/nightwatch-logo.svg"),
+        href: "https://nightwatchjs.org/"
+      },
+      {
+        name: "Selenium",
+        image: require("@/assets/img/selenium-logo.svg"),
+        href: "https://www.seleniumhq.org/"
+      },
     ]
   })
 };

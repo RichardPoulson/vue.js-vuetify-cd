@@ -14,7 +14,9 @@ module.exports = deepmerge({
     host: '127.0.0.1',
     port: 4444,
     cli_args: {
-      'webdriver.chrome.driver': require('chromedriver').path
+      'webdriver.chrome.driver': require('chromedriver').path,
+      'webdriver.gecko.driver': require('geckodriver').path,
+      "webdriver.safari.driver": "/usr/bin/safaridriver"
     }
   },
 
@@ -25,11 +27,26 @@ module.exports = deepmerge({
       silent: true
     },
 
+    firefox : {
+      desiredCapabilities: {
+        browserName : "firefox",
+        acceptInsecureCerts : true
+      }
+    },
+
     chrome: {
       desiredCapabilities: {
         browserName: 'chrome',
         javascriptEnabled: true,
         acceptSslCerts: true
+      }
+    },
+
+    safari : {
+      desiredCapabilities : {
+        browserName : "safari",
+        javascriptEnabled : true,
+        acceptSslCerts : true
       }
     }
   }

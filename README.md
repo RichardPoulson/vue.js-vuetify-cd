@@ -16,7 +16,7 @@ npm run serve
 npm run build
 ```
 
-### Run all unit (Jest) and end-to-end (Nightwatch) tests
+### Run all unit ([Jest](https://jestjs.io/)) and end-to-end ([Nightwatch](https://nightwatchjs.org/)) tests
 ```
 npm run test
 ```

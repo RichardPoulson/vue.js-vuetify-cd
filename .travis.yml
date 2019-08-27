@@ -13,4 +13,4 @@ cache:
 before_script:
   - cd vue.js-vuetify-cd
 script:
-  - npm run test
+  - npm run test:unit

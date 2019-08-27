@@ -1,6 +1,10 @@
 # vue.js-vuetify-cd
 Example Vue.js app; bootstrapped with Vue CLI + Vuetify.
 
+[![Build Status](https://travis-ci.com/RichardPoulson/vue.js-vuetify-cd.svg?branch=master)](https://travis-ci.com/RichardPoulson/vue.js-vuetify-cd)
+
+<hr>
+
 ## Project setup
 ```
 npm install

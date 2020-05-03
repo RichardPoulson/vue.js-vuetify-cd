@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:e2e": "vue-cli-service test:e2e",
+    "test:e2e": "vue-cli-service test:e2e --config nightwatch.conf.js --env firefox,chrome,safari",
     "test:unit": "vue-cli-service test:unit",
     "test": "npm run test:unit && vue-cli-service test:e2e --config nightwatch.conf.js --env firefox,chrome,safari"
   },
@@ -28,7 +28,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
-    "chromedriver": "^76.0.0",
+    "chromedriver": "^81.0.0",
     "deepmerge": "^4.0.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",

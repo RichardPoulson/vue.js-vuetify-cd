@@ -1,3 +1,10 @@
 .DS_Store
 .DS_Store
 node_modules
+selenium-debug.log
+vscode.code-workspace
+yarn-error.log
+yarn.lock
+vscode.code-workspace
+selenium-debug.log
+tests/e2e/reports/*.test.xml
